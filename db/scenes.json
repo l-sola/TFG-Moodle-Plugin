@@ -1,0 +1,473 @@
+{
+   "scenes":[
+      {
+         "id":"A001C011 01",
+         "scene":"E14",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A001",
+         "howto":"********************************************<br><br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado  y borre el texto para configurar la pregunta de la actividad. <br><br>********************************************<br><br>El ejemplo dado para una pregunta de opción múltiple propuesto es una simple pregunta tipo: ¿cuál de los siguientes números son impares? Para esta pregunta es necesario que configure el número de respuestas a dar para el alumnado en este caso cuatro respuestas, con las respuestas: 1,2,3 y 4 con una puntuación de 0.5 para el 1 y 3 que son las respuestas correctas. <br><br>Además si usted quiere, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado. ",
+         "description":"En esta actividad propuesta el alumno procede a un análisis de las respuestas proporcionadas por el profesor para razonar cuál o cuáles de las respuestas proporcionadas corresponden a la pregunta planteada, además es una actividad que se puede realizar de forma autónoma."
+      },
+      {
+         "id":"A002C011 01",
+         "scene":"E15",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A002",
+         "howto":"********************************************<br><br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br><br>********************************************<br><br>El ejemplo, dado para una pregunta de opción verdadera o falsa, propuesto es una simple pregunta tipo: ¿Es verdad que la Tierra gira alrededor del Sol? Para esta pregunta solo es necesario que configure si la respuesta es verdadera o falsa. <br><br>Además, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado. ",
+         "description":"Actividad parecida a la opción multiple donde las únicas respuestas disponibles para el alumno son verdadero y falso."
+      },
+      {
+         "id":"A003C011 01",
+         "scene":"E1",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A003",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br>El ejemplo, dado para una pregunta de respuesta corta, propuesto es una afirmación o texto corto con un hueco a rellenar del tipo: Nombre un anfibio:_______ Para esta pregunta es necesario dar una lista de palabras adecuadas para cotejar automáticamente cuando el alumnado responda. Se han generado dos respuestas válidas: rana con el 100% de la puntuación y sapo con un 80% de la puntuación.<br><br>Además, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado.",
+         "description":"Actividad orientada a escribir un respuesta corta con la información más relevante, de esta forma el alumno tiene que ser conciso y exponer la respuestas acorde a los parámetros de corrección asignados por el profesor."
+      },
+      {
+         "id":"A004C011 01",
+         "scene":"E3",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A004",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br>El ejemplo, dado para una pregunta numérica, propuesto es una pregunta corta con una respuesta del tipo numérico, la pregunta planteada corresponde a: Escriba el número PI con dos decimales. <br> Para esta pregunta es necesario dar una lista de números para cotejar cuando el alumnado responda. La única respuesta válida corresponde a 3.14<br><br>Además, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado.",
+         "description":"Actividad parecida a la respuesta corta en la cual hay que responder con una cifra númerica en base a pregunta formulada."
+      },
+      {
+         "id":"A005C011 01",
+         "scene":"E10",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A005",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br>El ejemplo, dado para una pregunta de tipo ensayo, propuesto es una pregunta corta con una respuesta más elaborada, la pregunta planteada corresponde a: Escriba todo lo que sepa sobre la fotosíntesis.<br> Para esta pregunta solo es necesario leer la respuesta del alumno y ser comprobados en base a los conocimientos expuestos en clase.<br><br>Además, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado.",
+         "description":"Actividad orientada a escribir sobre un tema pedido por el profesor de forma más extensa pudiendo usar más palabras a la hora de expresarse."
+      },
+      {
+         "id":"A006C011 01",
+         "scene":"E11",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A006",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br>El ejemplo, dado para una pregunta de tipo emparejamiento, propuesto es una serie de frases cortas que hay que emparejar con su respectiva respuesta, la pregunta planteada corresponde a: Empareje cada animal con su clasificación adecuada<br> Para esta pregunta solo es necesario proporcionar los animales y las respuestas, en el caso de la rana anfibio.<br><br>Además, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado.",
+         "description":"Actividad encargada de enlazar diferentes frases con una respuesta proporcionada por el profesor, el alumno es el encargado de unir el término con su respuesta correcta."
+      },
+      {
+         "id":"A007C011 01",
+         "scene":"E2",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A007",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br>El ejemplo, dado para una pregunta de tipo arrastrar y soltar marcadores, propuesto es una foto en este caso un mapa donde hay que colocar una serie de marcadores que contienen un texto, para esta pregunta el enunciado puede ser: Coloque el marcador 0 en la izquierda de la imagen y el marcador 1 en la esquina derecha<br> Para esta pregunta es necesario configurar los diferentes marcadores, la imagen a escoger y la superficie delimitada donde debe colocarse el marcador. .<br><br>Además, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado.",
+         "description":"Actividad en la cual el alumno en base a una pregunta se encarga de arrastrar marcadores con texto sobre una imagen definida por el profesorado."
+      },
+      {
+         "id":"A008C011 01",
+         "scene":"E9",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A008",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br>El ejemplo, dado para una pregunta de tipo calculada simple, propuesto es una simple suma con diferentes variantes,muy útil para preguntas en las que se necesita una variedad de resultados. El enunciado quedaría: Realice la siguiente suma {a} + {b}. El alumno responde con el número exacto o con un margen definido por el profesorado. <br> Para esta pregunta es necesario configurar las diferentes variables en este caso a y b para que obtengan valores diferentes a cada alumno. Por defecto se ha añadido un conjunto de números <br><br>Además, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado.",
+         "description":"Actividad encargada de plantear problemas matématicos con diferentes soluciones en base a unas variables definidas por el profesor."
+      },
+      {
+         "id":"A009C011 01",
+         "scene":"E12",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A009",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br>El ejemplo, dado para una pregunta de tipo elige la palabra perdida, propuesto consiste en un conjunto de frases donde cada hueco en blanco puede contener una serie de respuestas donde solo una es correcta, como ejemplo se da: El gato [[1]] se sentó [[2]]<br> Para esta pregunta es necesario configurar los diferentes conjuntos de respuestas para la opción [[1]] y opción [[2]]. Por defecto se ha añadido en el conjunto 1 gato y pelo y en el conjunto 2 alfombra y mesa<br><br>Además, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado.",
+         "description":"Actividad parecida al emparejamiento en la que se debe unir una pregunta con una respuesta preparada por el profesorado con la diferencia en la que se puede asignar grupos de respuestas por pregunta."
+      },
+      {
+         "id":"A010C011 01",
+         "scene":"E22",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A010",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br>El ejemplo, dado para una pregunta de tipo arrastrar y soltar imagen/texto, propuesto es una foto en este caso un mapa que muestra las diferentes componentes geológicos que forman el fondo oceánico , en este hay que colocar una serie de marcadores que contiene los nombres de las figuras señaladas en la imagen, para esta pregunta el enunciado puede ser: Coloque los siguientes términos donde correspondan<br> Para esta pregunta es necesario configurar los diferentes marcadores, la imagen a escoger y la superficie delimitada donde debe colocarse el marcador .<br><br>Además, la retroalimentación ha sido añadida con algunos ejemplos, tanto para respuesta individual como genérica donde se muestra una respuesta breve al alumnado.",
+         "description":"Actividad en la cual el alumno en base a una pregunta se encarga de arrastrar imagenes o texto sobre una imagen definida por el profesorado."
+      },
+      {
+         "id":"A101C012 01",
+         "scene":"E8",
+         "competences":[
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C051"
+            }
+         ],
+         "activity":"A101",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> El siguiente foro ha sido creado para albergar un debate sencillo entre el alumnado, orientado a un debate corto y manejable <br><br> A continuación edite los parámetros más importantes para el foro como puede ser la temporalización y subscripción.",
+         "description":"Modalidad del foro orientada al debate entre diferentes alumnos sobre un tema con una duración limitada"
+      },
+      {
+         "id":"A102C021 01",
+         "scene":"E19",
+         "competences":[
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C051"
+            }
+         ],
+         "activity":"A102",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> El siguiente foro ha sido creado para albergar un foro de uso general entre el alumnado, orientado a un foro abierto en el que cualquiera puede empezar un tema <br><br> A continuación edite los parámetros más importantes para el foro como puede ser la temporalización.",
+         "description":"Modalidad del foro orientada a discutir temas más amplios"
+      },
+      {
+         "id":"A103C021 01",
+         "scene":"E18",
+         "competences":[
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C051"
+            }
+         ],
+         "activity":"A103",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> El siguiente foro ha sido creado para albergar un foro en el que cada persona inicia un tema entre el alumnado, orientado a que los alumnos puedan expresar sus reflexiones en diferentes temas.<br><br> A continuación edite los parámetros más importantes para el foro como puede ser la temporalización y subscripción.",
+         "description":"Modalidad del foro orientado a discutir temas con una duración media dando más libertad a los estudiantes para iniciar temas."
+      },
+      {
+         "id":"A104C011 01",
+         "scene":"E17",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C051"
+            }
+         ],
+         "activity":"A104",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> El siguiente foro ha sido creado para albergar un foro de preguntas y respuestas entre el alumnado, orientado a generar una respuesta entre los alumnos de forma original ya que hasta que no se ha respondido no se puede ver lo contestado<br><br> A continuación edite los parámetros más importantes para el foro como puede ser la temporalización y subscripción.",
+         "description":"Modalidad del foro en el que el profesor inicia con una pregunta y el alumno no puede ver las respuestas hasta que no participa."
+      },
+      {
+         "id":"A200C011 01",
+         "scene":"E7",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C051"
+            }
+         ],
+         "activity":"A200",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> El siguiente taller ha sido creado con la funcionalidad de poder entregar una tarea y que el alumnado pueda participar en el proceso de corrección. Borre este texto para escribir unas instrucciones al alumnado. <br><br> A continuación edite los parámetros más importantes para el taller como puede ser la calificación y disponibilidad.",
+         "description":"Actividad parecida a la tarea, donde el alumnado entrega su proyecto pero el corregido por otros estudiantes y el proceso es supervisado por el profesorado."
+      },
+      {
+         "id":"A300C011 01",
+         "scene":"E6",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C051"
+            }
+         ],
+         "activity":"A300",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> La siguiente entrega ha sido creada con la funcionalidad de poder entregar una tarea de forma individual para que el profesor valore la entrega. Borre este texto para escribir unas instrucciones al alumnado. <br><br> A continuación edite los parámetros más importantes para la entrega como puede ser la calificación y disponibilidad.",
+         "description":"Actividad donde el alumnado entrega su tarea de forma individual para ser corregido por el profesorado."
+      },
+      {
+         "id":"A300C011 02",
+         "scene":"E20",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A300",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> La siguiente entrega ha sido creada con la funcionalidad de poder entregar una tarea de forma grupal para que el profesor valore la entrega de forma grupal entre el grupo de alumnos creados.. Borre este texto para escribir unas instrucciones al alumnado. <br><br> A continuación edite los parámetros más importantes para la entrega como pueden ser la calificación, configuración de entrega por grupo y disponibilidad.",
+         "description":"Actividad donde el alumnado entrega su tarea de forma grupal con otros alumnos para ser corregido por el profesorado."
+      },
+      {
+         "id":"A400C012 01",
+         "scene":"E13",
+         "competences":[
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C051"
+            }
+         ],
+         "activity":"A400",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> La siguiente base de datos ha sido creada con la funcionalidad de poder crear en conjunto una base de datos para almacenar todo tipo de entradas que sean oportunas por el profesorado. <br><br> A continuación edite los parámetros más importantes para la base de datos como pueden ser las entradas y disponibilidad.",
+         "description":"Actividad encargada de crear una base de datos para almacenar diferentes entradas propuestas por el alumnado, completando una base de datos sobre un tema concreto."
+      },
+      {
+         "id":"A500C012 01",
+         "scene":"E5",
+         "competences":[
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A500",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> El siguiente glosario ha sido creado con la funcionalidad de poder crear un conjunto de entradas de forma que formen en su totalidad un diccionario en el cual los alumnos puedan insertar todas las entradas que sean oportunas sobre un tema en específico.<br><br> A continuación edite los parámetros más importantes para el glosario como pueden ser las entradas y apariencia.",
+         "description":"Actividad encargada de crear un glosario para almecenar diferentes términos en base a un criterio del profesorado."
+      },
+      {
+         "id":"A600C011 01",
+         "scene":"E4",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C051"
+            }
+         ],
+         "activity":"A600",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> La siguiente wiki ha sido creada con la funcionalidad de poder crear una wiki de forma individual de la misma forma que fuera un portfolio donde se pueda apuntar todos los detalles del alumno en un mismo sitio y después ser consultado por el profesor y alumno.<br><br> A continuación edite los parámetros más importantes para el glosario como puede ser el formato de la página.",
+         "description":"Actividad encargada de la creación de una wiki a modo de portfolio para la gestión única de un alumno, además la wiki cubre una gran número de competencias debido a su diverso uso."
+      },
+      {
+         "id":"A600C011 02",
+         "scene":"E21",
+         "competences":[
+            {
+               "competenceid":"C011"
+            },
+            {
+               "competenceid":"C012"
+            },
+            {
+               "competenceid":"C021"
+            },
+            {
+               "competenceid":"C031"
+            },
+            {
+               "competenceid":"C041"
+            },
+            {
+               "competenceid":"C061"
+            }
+         ],
+         "activity":"A600",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> La siguiente wiki ha sido creada con la funcionalidad de poder crear una wiki de forma grupal con más alumnos donde se pueda apuntar todos los detalles del  grupo de alumnos en un mismo sitio y después ser consultado por el profesorado y alumnado.<br><br> A continuación edite los parámetros más importantes para el glosario como puede ser el formato de la página.",
+         "description":"Actividad encargada de la creación de una wiki grupal con una serie de alumnos, además la wiki cubre una gran número de competencias debido a su diverso uso."
+      },
+      {
+         "id":"A700C051 01",
+         "scene":"E16",
+         "competences":[
+            {
+               "competenceid":"C051"
+            }
+         ],
+         "activity":"A700",
+         "howto":"********************************************<br>La actividad que está usted viendo ahora mismo se ha creado de forma automática gracias al bloque añadido en el curso de forma no visible para el estudiante, es conveniente que lea con detalle la siguiente información respecto a cómo configurar la actividad y por último active la opción visible de la actividad para poder ser usada por el alumnado y borre el texto para configurar la pregunta de la actividad.<br>********************************************<br><br> La siguiente encuesta ha sido creada con la funcionalidad de poder crear una votación para los alumnos sobre un tema en concreto de forma que los alumnos puedan decidir..<br><br> A continuación edite los parámetros más importantes para el glosario como pueden ser disponibilidad, ajuste de pregunta y envío y después del envío para activar la opción al alumnado de ver la votación en general.",
+         "description":"Actividad encargada de la creación de una encuesta para conocer la opinión del alumnado en un tema."
+      }
+      
+   ]
+}

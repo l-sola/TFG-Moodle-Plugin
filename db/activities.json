@@ -1,0 +1,150 @@
+{
+   "activities":[
+        
+      {
+         "name":"Debate sencillo",
+         "type":"single",
+         "code":"A101",
+         "description":"",
+         "image":"forum.png",
+         "titlename":"Foro creado a través del bloque"   
+      },
+      {
+         "name":"Foro general",
+         "type":"general",   
+         "code":"A102",
+         "description":"",
+         "image":"forum.png",
+         "titlename":"Foro creado a través del bloque"
+      },
+      {
+         "name":"Cada persona plantea un tema",
+         "type":"eachuser",
+         "code":"A103",
+         "description":"",
+         "image":"forum.png",
+         "titlename":"Foro creado a través del bloque"
+      },
+      {
+         "name":"Foro pregunta y respuesta",
+         "type":"qanda",
+         "code":"A104",
+         "description":"",
+         "image":"forum.png",
+         "titlename":"Foro creado a través del bloque"
+      },
+      {
+         "name":"Taller",
+         "code":"A200",
+         "description":"",
+         "image":"workshop.png",
+         "titlename":"Taller creado a través del bloque"
+      },
+      {
+         "name":"Tarea",
+         "code":"A300",
+         "description":"",
+         "image":"assign.png",
+         "titlename":"Entrega creada a través del bloque"
+      },
+      {
+         "name":"Base de datos",
+         "code":"A400",
+         "description":"",
+         "image":"data.png",
+         "titlename":"Base de datos creada a través del bloque"
+      },
+      {
+         "name":"Glosario",
+         "code":"A500",
+         "description":"",
+         "image":"glossary.png",
+         "titlename":"Glosario creado a través del bloque"
+      },
+      {
+         "name":"Wiki",
+         "code":"A600",
+         "description":"",
+         "image":"wiki.png",
+         "titlename":"Wiki creada a través del bloque"
+      },
+      {
+         "name":"Encuesta",
+         "code":"A700",
+         "description":"",
+         "image":"survey.png",
+         "titlename":"Encuesta creada a través del bloque"
+      },
+      {
+         "name":"Cuestionario pregunta múltiple",
+         "code":"A001",
+         "description":"",
+         "image":"multichoice.svg",
+         "titlename":"Pregunta opción múltiple creada por el bloque"
+      },
+      {
+         "name":"Cuestionario verdadero/falso",
+         "code":"A002",
+         "description":"",
+         "image":"truefalse.svg",
+         "titlename":"Pregunta opción verdadero y falso creada por el bloque"
+      },
+      {
+         "name":"Cuestionario respuesta corta",
+         "code":"A003",
+         "description":"",
+         "image":"shortanswer.svg",
+         "titlename":"Pregunta opción respueta corta creada por el bloque"
+      },
+      {
+         "name":"Cuestionario númerico",
+         "code":"A004",
+         "description":"",
+         "image":"numerical.svg",
+         "titlename":"Pregunta númerica creada por el bloque"
+      },
+      {
+         "name":"Cuestionario ensayo",
+         "code":"A005",
+         "description":"",
+         "image":"essay.svg",
+         "titlename":"Pregunta opción ensayo creada por el bloque"
+      },
+      {
+         "name":"Cuestionario emparejamiento",
+         "code":"A006",
+         "description":"",
+         "image":"match.svg",
+         "titlename":"Pregunta opción emparejamiento creada por el bloque"
+      },
+      {
+         "name":"Cuestionario arrastrar marcadores",
+         "code":"A007",
+         "description":"",
+         "image":"ddmarker.png",
+         "titlename":"Pregunta opción arrastrar marcadores creada por el bloque"
+      },
+      {
+         "name":"Cuestionario calculada simple",
+         "code":"A008",
+         "description":"",
+         "image":"calculatedsimple.svg",
+         "titlename":"Pregunta opción calculada simple creada por el bloque"
+      },
+      {
+         "name":"Cuestionario encuentra la palabra perdida",
+         "code":"A009",
+         "description":"",  
+         "image":"gapselect.png",
+         "titlename":"Pregunta encuentra la palabra perdida creada por el bloque"
+      },
+      {
+         "name":"Cuestionario arrastar imagenes/texto",
+         "code":"A010",
+         "description":"",
+         "image":"ddimagetext.png",
+         "titlename":"Pregunta opción arrastrar imagenes/texto creada por el bloque"
+         
+      }
+   ]
+}

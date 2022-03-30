@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/tfg/db" VERSION="20200802" COMMENT="XMLDB file for Moodle blocks/tfg"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="tfg_competence" COMMENT="Default comment for the table, please edit me5">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="200" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_scene" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="15" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="myactivityid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="60" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="howto" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivityid" TYPE="foreign" FIELDS="myactivityid" REFTABLE="tfg_myactivity" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_item" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="usermodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="type" TYPE="char" LENGTH="15" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="usermodified" TYPE="foreign" FIELDS="usermodified" REFTABLE="user" REFFIELDS="id"/>
+        <KEY NAME="fk_courseid" TYPE="foreign" FIELDS="course" REFTABLE="course" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_item_quiz" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="moodle_activityid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity_item" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+        <KEY NAME="fk_quiz" TYPE="foreign" FIELDS="moodle_activityid" REFTABLE="quiz" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_item_workshop" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="moodle_activityid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity_item" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+        <KEY NAME="fk_workshop" TYPE="foreign" FIELDS="moodle_activityid" REFTABLE="workshop" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_item_assign" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="moodle_activityid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity_item" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+        <KEY NAME="fk_assignmoodle" TYPE="foreign" FIELDS="moodle_activityid" REFTABLE="assign" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_item_forum" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="moodle_activityid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity_item" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+        <KEY NAME="fk_forum" TYPE="foreign" FIELDS="moodle_activityid" REFTABLE="forum" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_item_feedback" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="moodle_activityid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity_item" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+        <KEY NAME="fk_feedback" TYPE="foreign" FIELDS="moodle_activityid" REFTABLE="feedback" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_item_wiki" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="moodle_activityid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity_item" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+        <KEY NAME="fk_wiki" TYPE="foreign" FIELDS="moodle_activityid" REFTABLE="wiki" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_item_glossary" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="moodle_activityid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity_item" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+        <KEY NAME="fk_glossary" TYPE="foreign" FIELDS="moodle_activityid" REFTABLE="glossary" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_item_data" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="moodle_activityid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity_item" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+        <KEY NAME="fk_data" TYPE="foreign" FIELDS="moodle_activityid" REFTABLE="data" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="image" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="titlename" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_type_glossary" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="myactivityid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity" TYPE="foreign" FIELDS="myactivityid" REFTABLE="tfg_myactivity" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_type_wiki" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="myactivityid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity" TYPE="foreign" FIELDS="myactivityid" REFTABLE="tfg_myactivity" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_type_feedback" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="myactivityid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity" TYPE="foreign" FIELDS="myactivityid" REFTABLE="tfg_myactivity" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_type_forum" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="type" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="myactivityid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity" TYPE="foreign" FIELDS="myactivityid" REFTABLE="tfg_myactivity" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_type_assign" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="myactivityid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity" TYPE="foreign" FIELDS="myactivityid" REFTABLE="tfg_myactivity" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_type_quiz" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="myactivityid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="myquestionid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity" TYPE="foreign" FIELDS="myactivityid" REFTABLE="tfg_myactivity" REFFIELDS="id"/>
+        <KEY NAME="fk_myquestionid" TYPE="foreign-unique" FIELDS="myquestionid" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_type_workshop" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="myactivityid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity" TYPE="foreign" FIELDS="myactivityid" REFTABLE="tfg_myactivity" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_type_data" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="myactivityid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivity" TYPE="foreign" FIELDS="myactivityid" REFTABLE="tfg_myactivity" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myquestion" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="titlename" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_calculated_simpl" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_drags_textimages" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_drags_markers" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_essay" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_gapselect" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_multianswer" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_numerical" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_shortanswer" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_truefalse" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_mq_type_match" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myquestion" TYPE="foreign" FIELDS="id" REFTABLE="tfg_myquestion" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_myactivity_usage" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="myactivity_item_quizid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_myactivityquiz" TYPE="foreign" FIELDS="myactivity_item_quizid" REFTABLE="tfg_myactivity_item_quiz" REFFIELDS="id"/>
+        <KEY NAME="fk_quizslot" TYPE="foreign" FIELDS="id" REFTABLE="quiz_slots" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_appears" COMMENT="Table that join scene and competence">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="char" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="competenceid" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="sceneid" TYPE="char" LENGTH="15" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="competenceid, sceneid"/>
+        <KEY NAME="fk_sceneid" TYPE="foreign" FIELDS="sceneid" REFTABLE="tfg_scene" REFFIELDS="id"/>
+        <KEY NAME="fk_competenceid" TYPE="foreign" FIELDS="competenceid" REFTABLE="tfg_competence" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_has" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="sceneid" TYPE="char" LENGTH="15" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="myactivity_itemid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="sceneid, myactivity_itemid"/>
+        <KEY NAME="fk_sceneid" TYPE="foreign" FIELDS="sceneid" REFTABLE="tfg_scene" REFFIELDS="id"/>
+        <KEY NAME="fk_activity_itemid" TYPE="foreign" FIELDS="myactivity_itemid" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_teacher_comp_request" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="usermodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="myactivity_itemid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="usermodified" TYPE="foreign" FIELDS="usermodified" REFTABLE="user" REFFIELDS="id"/>
+        <KEY NAME="fk_courseid" TYPE="foreign" FIELDS="courseid" REFTABLE="course" REFFIELDS="id"/>
+        <KEY NAME="fk_myactivityitemid" TYPE="foreign-unique" FIELDS="myactivity_itemid" REFTABLE="tfg_myactivity_item" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_student_comp_request" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="usermodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="usermodified" TYPE="foreign" FIELDS="usermodified" REFTABLE="user" REFFIELDS="id"/>
+        <KEY NAME="fk_courseid" TYPE="foreign" FIELDS="courseid" REFTABLE="course" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_satisfy" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="competenceid" TYPE="char" LENGTH="15" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="requestid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_competenceid" TYPE="foreign" FIELDS="competenceid" REFTABLE="competence" REFFIELDS="id"/>
+        <KEY NAME="fk_request_teacher" TYPE="foreign" FIELDS="requestid" REFTABLE="tfg_teacher_comp_request" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tfg_order" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="competenceid" TYPE="char" LENGTH="15" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="requestid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="fk_competenceid" TYPE="foreign" FIELDS="competenceid" REFTABLE="competence" REFFIELDS="id"/>
+        <KEY NAME="fk_request_student" TYPE="foreign" FIELDS="requestid" REFTABLE="tfg_student_comp_request" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

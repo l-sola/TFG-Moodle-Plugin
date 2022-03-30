@@ -1,0 +1,167 @@
+
+
+/*Check part from competences */
+
+.chk_comp {
+    /*position: relative;*/
+    float:left
+}
+
+
+.chk_comp input {
+  -webkit-appearance: none;   
+  -moz-appearance: window;   
+  -ms-appearance: window;  
+   
+  /*appearance: window; */
+  
+  margin-right: 20px;
+   
+  width: 90px;
+  height: 90px;
+  
+  
+  
+  background:  url('../resource/man.png') no-repeat 20px 20px;
+  background-color: #f5f5dc;
+ 
+}
+
+.chk_comp input:checked{
+    border: 1px solid black;
+}
+
+.C011 input:checked {
+	background: #E74C3C url('../resource/chk/chkon/analysis.png') no-repeat 20px 20px !important  ;
+        background-size: 50px 50px !important ;
+       
+}
+
+.C012 input:checked {
+	
+        background: #8E44AD url('../resource/chk/chkon/summary.png') no-repeat 20px 20px !important;
+        background-size: 50px 50px !important ;
+}
+
+.C021 input:checked  { 
+	background: #3498DB url('../resource/chk/chkon/practise.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important;
+}
+
+.C031 input:checked {
+	background: #16A085 url('../resource/chk/chkon/basicknowledge.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important;	
+}
+
+.C041 input:checked {
+	background: #28B463 url('../resource/chk/chkon/information.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important;	
+}
+
+.C051 input:checked  {
+	background: #F39C12 url('../resource/chk/chkon/group.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important;	
+}
+
+.C061 input:checked {
+	background: #F1C40F url('../resource/chk/chkon/ownwork.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important;	
+}
+
+
+.C011  input  {
+
+        background: #E6B0AA url('../resource/chk/chkoff/analysis.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important; 
+        
+}
+
+.C012 input {
+	background: #D2B4DE url('../resource/chk/chkoff/summary.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important ;
+}
+
+.C021 input {
+	background: #AED6F1 url('../resource/chk/chkoff/practise.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important;
+}
+
+.C031 input {
+	background: #A2D9CE url('../resource/chk/chkoff/basicknowledge.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important;
+}
+
+.C041 input {
+	background: #ABEBC6 url('../resource/chk/chkoff/information.png') no-repeat 20px 20px!important;
+        background-size: 50px 50px !important;
+}
+
+.C051 input  {
+	background: #FAD7A0 url('../resource/chk/chkoff/group.png') no-repeat 20px 20px !important;
+        background-size: 50px 50px !important;
+}
+
+.C061 input  {
+	background: #F9E79F url('../resource/chk/chkoff/ownwork.png') no-repeat 20px 20px !important;
+        background-size: 50px 50px !important;
+}
+
+/*Check part from competences */
+.b_activities{
+    float:left;
+    margin: 20px 20px 20px 0px;
+}
+
+.activities_block{
+    margin-bottom:20px;
+    float:left;
+}
+.b_activities button{
+    
+  -webkit-appearance: none;   
+  -moz-appearance: window;   
+  -ms-appearance: window;  
+   
+  /*appearance: window; */
+  
+  margin-right: 20px;
+  border:solid 1px black;
+  width: 90px;
+  height: 90px;
+  
+  background-color: #D5F5E3;
+}
+
+.b_activities button:hover{
+    background-color: #82E0AA;
+}
+
+.activity_text{
+    
+    border: solid 1px black;
+    border-radius: 10px;
+    float:right;
+    padding: 8px;
+    margin-right: 10px;
+    width: 500px;
+    
+    text-align: justify;
+    height: 150px;
+    
+}
+
+
+.message{
+    border: solid 2px red;
+    font-weight: 700;
+    padding: 10px;
+    width: max-content;
+}
+
+.lane {
+    border-bottom: 2px solid black;
+}
+
+.text{
+    width:100%;
+}

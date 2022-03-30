@@ -1,0 +1,49 @@
+{
+   "competences":[
+      {
+         "name":"Análisis",
+         "code":"C011",
+         "description":"La competencia de análisis hace referencia a la capacidad de, planteado un problema, saber obtener toda la información necesaria para resolver el problema aplicando el conocimiento extra del alumno en el problema. "
+      },
+      {
+         "name":"Síntesis",
+         "code":"C012",
+         "description":"Esta competencia potencia la capacidad de obtener la información necesaria de un conjunto de datos para, al final, mostrar lo importante."
+      },
+      {
+         "name":"Aplicar conocimientos a la práctica",
+         "code":"C021",
+         "description":"Esta competencia se describe valiéndose de términos más generales, como «enfrentarse a problemas concretos haciendo uso de conceptos básicos».Es frecuente que esta competencia se describa en términos más profesionales, como recopilar información o escribir un informe sobre una cuestión compleja."
+      },
+      {
+         "name":"Conocimientos generales básicos del campo de estudio",
+         "code":"C031",
+         "description":"Esta competencia hace referencia a la capacidad de aplicar conocimientos básicos, especificos o no especificos a la materia estudiada, aplicando otros conocimientos para resolver el problema en cuestión."
+      },
+      {
+         "name":"Habilidades de gestión de la información",
+         "code":"C041",
+         "description":"Por esta competencia se entiende la capacidad de encontrar información en la bibliografía, distinguir entre fuentes y bibliografía primarias y secundarias, hacer uso de bibliotecas —tradicionales o electrónicas— y localizar información en Internet"
+      },
+      {
+         "name":"Habilidades Interpersonales",
+         "code":"C051",
+         "description":"Esta competencia engloba aspectos como : la comunicación verbal y no verbal, la capacidad de dirigir una discusión en grupo o trabajar en él, la capacidad de interactuar de forma civilizada con personas provenientes de ambientes muy diversos."
+      },
+      {
+         "name":"Trabajo autónomo",
+         "code":"C061",
+         "description":"Esta competencia hace himcapié en la capacidad de organizar el tiempo disponible, establecer prioridades, trabajar bajo presión y prestar el servicio convenido reviste una importancia fundamental en la vida personal y profesional y en la vida en sociedad en general."
+      },
+      {
+         "name":"Habilidades informáticas básicas",
+         "code":"C071",
+         "description":""
+      },
+      {
+         "name":"Habilidades de investigación",
+         "code":"C081",
+         "description":""
+      }
+   ]
+}
